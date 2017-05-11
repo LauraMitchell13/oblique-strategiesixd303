@@ -1,0 +1,83 @@
+
+	body {height: 125vh;
+	 background-image: url(../images/cards.svg);
+    background-repeat: no-repeat;
+        text-transform: uppercase;
+	letter-spacing: 0.05em;
+	font: 1em "Avenir";
+	}
+	
+
+	.container {
+	position: fixed !important;
+	position: absolute;
+	top:0;
+	right:0;
+	bottom:0;
+	left:0;
+	display: flex;
+	display: -webkit-flex;
+	justify-content: center;
+	align-items: center;
+	}
+	
+	/* This is the card. */
+	.card {
+	padding: 10px;
+	width: 210px;
+	height: 280px;
+	background: rgba(255,255,255,1.5);
+	border-radius: 5px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	box-shadow: 0 5px 5px rgba(0,0,0,0.75);
+        margin-top: 400px;
+	-webkit-perspective: 1000; /* NEW */
+        
+	}
+
+.refresh{
+    position:fixed;
+    left:42%;
+    top:50%;
+    width:50%;
+    }
+
+.contain{
+    display:flex;
+}
+
+.refresh:hover{
+    position: fixed;
+        opacity:0.6;
+    transition:1.5s; 
+    -webkit-transform:rotate(90deg);
+    -moz-transform:rotate(90deg);
+    -o-transform:rotate(90deg);
+    -ms-transform:rotate(90deg);
+    transform:rotate(90deg);
+}
+}
+	/* Padding so the type doesn't hit the edge of the card. */
+	
+	p {
+	padding: 10px;
+	}
+	/* The CSS for the fade in. */ 
+	@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+	@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+	@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+	.fade-in {
+	opacity:0;  /* Make things invisible upon start */
+	-webkit-animation:fadeIn ease-in 1;  /* Call the keyframe named fadeIn, use animattion ease-in and repeat it only 1 time. */
+	-moz-animation:fadeIn ease-in 1;
+	animation:fadeIn ease-in 1;
+	-webkit-animation-fill-mode:forwards;  /* This makes sure that after animation is done we remain at the last keyframe value (opacity: 1). */
+	-moz-animation-fill-mode:forwards;
+	animation-fill-mode:forwards;
+	-webkit-animation-duration:1s;
+	-moz-animation-duration:1s;
+	animation-duration:1s;
+	}
