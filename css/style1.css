@@ -1,6 +1,6 @@
 
 	body {height: 125vh;
-	 background-image: url(../images/cards.svg);
+	 background-image: url(../images/space.svg);
     background-repeat: no-repeat;
         text-transform: uppercase;
 	letter-spacing: 0.05em;
@@ -9,7 +9,7 @@
 	
 
 	.container {
-	position: fixed !important;
+
 	position: absolute;
 	top:0;
 	right:0;
@@ -33,31 +33,27 @@
 	align-items: center;
 	text-align: center;
 	box-shadow: 0 5px 5px rgba(0,0,0,0.75);
-        margin-top: 400px;
+        margin-top: 280px;
 	-webkit-perspective: 1000; /* NEW */
         
 	}
 
 .refresh{
-    position:fixed;
-    left:42%;
-    top:50%;
+    position: absolute;
+    left:35%;
+    top:70%;
     width:50%;
     }
 
-.contain{
-    display:flex;
-}
-
 .refresh:hover{
-    position: fixed;
+    position: absolute;
         opacity:0.6;
-    transition:1.5s; 
-    -webkit-transform:rotate(90deg);
-    -moz-transform:rotate(90deg);
-    -o-transform:rotate(90deg);
-    -ms-transform:rotate(90deg);
-    transform:rotate(90deg);
+    transition:1s; 
+          -ms-transform: rotate(360deg);
+     -moz-transform:rotate(360deg);
+    -o-transform:rotate(360deg);
+    -webkit-transform: rotate(360deg); 
+    transform: rotate(360deg); 
 }
 }
 	/* Padding so the type doesn't hit the edge of the card. */
